@@ -6,6 +6,7 @@ app.set("view engine", "ejs");
 app.set("views", "./views");
 //middelware
 const verif = require("./middlewares/verif");
+app.use(express.static("public-img"));
 app.use(verif);
 //Routes
 //-----------------home------------------------
